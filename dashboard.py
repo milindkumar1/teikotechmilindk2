@@ -84,8 +84,8 @@ def overview_page(frame: pd.DataFrame) -> None:
         hide_index=True,
         column_config={
             "percentage": st.column_config.NumberColumn(format="%.2f%%"),
-            "total_count": st.column_config.NumberColumn(format="%,d"),
-            "count": st.column_config.NumberColumn(format="%,d"),
+            "total_count": st.column_config.NumberColumn(format="%d"),
+            "count": st.column_config.NumberColumn(format="%d"),
         },
     )
     st.download_button(
